@@ -40,8 +40,9 @@ associados, envia uma mensagem personalizada para cada contato pelo Whatsapp Web
     e encontrar a versão correta. Lembre-se de, na pasta onde estão os arquivos driver.py e ContatosPame.xlsx,
     substituir o chromedriver.exe antigo pelo recêm instalado.
     
-   4) Explicação.mp4, que é um vídeo explicativo de como usar o programa, desde a instalação, configuração do 
-   ambiente e solução de problemas à demonstração do seu uso na prática;
+   4) LINK COM VÍDEOS EXPLICATIVOS, que é uma pastanda contendo um arquivo de texto contendo um link com vídeos explicativos
+   de como usar o programa, desde a instalação, configuração do ambiente e solução de problemas à demonstração do seu uso na 
+   prática;
    
    5) README.md, que simplesmente contêm o texto aqui escrito.
     
