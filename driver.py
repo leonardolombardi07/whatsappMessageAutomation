@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By #Permite especificar o tipo de eleme
 from selenium.webdriver.common.keys import Keys #Permite pressionar enter, por exemplo
 from selenium.webdriver.chrome.options import Options #Permite especificar a configuração do nosso driver
 import openpyxl #Permite acessar uma planilha excel
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Começar leitura na função Main (linha 116 ou algo parecido)
 
@@ -24,7 +25,7 @@ def getPhoneList():
     na coluna A e retorna uma lista com esses telefones
     '''
 
-    wb = openpyxl.load_workbook('contatosPame.xlsx')
+    wb = openpyxl.load_workbook('ContatosPame.xlsx')
     phones_tab = wb['telefones']
 
     phone_list = []
@@ -129,7 +130,8 @@ def main():
     chrome_options.set_capability('unhandledPromptBehavior', 'accept') 
     
     # definimos o driver pelo selenium passando as opções especifcadas
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    # driver = webdriver.Chrome(options=chrome_options)
 
     # funções que são rodadas em ordem
     openDriverAndScanQrCodeManually()
